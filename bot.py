@@ -14,7 +14,7 @@ logging.basicConfig(
 )
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("РЇ С…СЂР°РЅРёС‚РµР»СЊ Р—Р°Р»РіРѕ. РЇ РїСЂРѕСЃРЅСѓР»СЃСЏ.")
+    await update.message.reply_text("Я хранитель Залго. Я проснулся.")
 
 def main():
     app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
@@ -22,4 +22,4 @@ def main():
     app.run_polling()
 
 if __name__ == '__main__':
-    main()ђҐ¦Ё¬ ўлў®¤  Є®¬ ­¤ ­  нЄа ­ (ECHO) ўЄ«озҐ­.
+    main()
