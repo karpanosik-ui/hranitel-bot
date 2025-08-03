@@ -1,11 +1,14 @@
 services:
   - type: web
     name: hranitel-bot
-    runtime: python
-    buildCommand: pip install -r requirements.txt
+    env: python
+    buildCommand: |
+      pip install --upgrade pip
+      pip uninstall -y python-telegram-bot
+      pip install -r requirements.txt
     startCommand: python bot.py
     envVars:
       - key: TELEGRAM_TOKEN
-        fromDatabase: false
+        sync: false
       - key: OPENAI_API_KEY
-        fromDatabase: false
+        sync: false
