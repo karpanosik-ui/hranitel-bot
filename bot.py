@@ -14,7 +14,7 @@ logging.basicConfig(
 )
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Я хранитель Залго.")
+    await update.message.reply_text("I'm wake up.")
 
 def main():
     app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
